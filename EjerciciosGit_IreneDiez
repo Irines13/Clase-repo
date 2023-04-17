@@ -1,0 +1,126 @@
+Laboratorio de Sistemas - Ejercicios de Git:
+----------------------------------------------------
+
+Pregunta 4: Identidic la informacion que devuelve el comando git status.
+
+Lo que devuelve en la terminal es: 
+"En la rama master
+
+No hay commits todavía
+
+no hay nada para confirmar (crea/copia archivos y usa "git add" para hacerles seguimiento)"
+
+Esto quiere decir que es un repositorio, y que todavia no hay nada metido dentro de él ni se ha relaizado todavía ningún cambio.
+
+Pregunta 5: Añade dos ficheros y vuelve a verificar con git status. ¿Qué información devuelve este comando?
+¿En que cambia con respecto a su anterior ejecución?
+
+Sale lo siguiente: "En la rama master
+
+No hay commits todavía
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que se será confirmado)
+	ingredientes.txt
+	instrucciones.txt
+
+no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa "git add" para hacerles seguimiento)"
+Este comando devuelve que es un repositorio, y se muestra que tiene dos archivos sin ningun cambio o modificacióon. Y que para seguir sus cambios apliquemos git add.
+La diferencia es que antes no había ningun archivo en el repositorio y ahora hay dos.
+
+Pregunta 6: Añade los ficheros al staging area. Verifica el estado del repositorio.
+
+Ahora aparece esto: "En la rama master
+
+No hay commits todavía
+
+Cambios a ser confirmados:
+  (usa "git rm --cached <archivo>..." para sacar del área de stage)
+	nuevos archivos: ingredientes.txt
+	nuevos archivos: instrucciones.txt
+"
+
+Pregunta 8: ¿Que utilidad tiene -m?
+
+Lo que pone en help. Use the given <msg> as the commit message. If multiple -m options
+are given, their values are concatenated as separate paragraphs.
+Es decir, sirve para añadir un mensaje a la hora de hacer un commit.
+
+
+Pregunta 10: ¿Que efecto tiene no utilzar -m al hacer commit?
+El efecto es que no se muestra ningun mensaje al hacer commit.
+
+Pregunta 11: Ejecuta git log. ¿Que información nos muestra? ¿En que se diferencia de git status?
+¿Qué nos indica si lo usamos con --stat?
+
+Nos muestra lo siguiente:
+"commit 64798aad4bb6f13c3c1f2f3d10fa4294f0955130 (HEAD -> master)
+Author: irines <i.diezd.2022@alumnos.urjc.es>
+Date:   Sat Apr 1 16:40:48 2023 +0200
+
+    añade media cebolla
+
+commit 63403b3a70fd33609cddc080c4fccffbd8fecd88
+Author: irines <i.diezd.2022@alumnos.urjc.es>
+Date:   Sat Apr 1 16:32:41 2023 +0200
+
+    modificamos los archivos
+
+commit 4d9a369c17c136028ccad58f1277f79c543de468
+Author: irines <i.diezd.2022@alumnos.urjc.es>
+Date:   Sat Apr 1 16:19:36 2023 +0200
+
+    añadimos las instrucciones e ingredientes de la receta
+"
+Es decir, nos muestra los commits hechos, quien y cuando.
+Se difecncia en que git status nos muestra el estado actual del repositorio y sus cambios. En cambio, 
+git log solo muestra los commits o cambios hechos de los ficheros dentro del repositorio.
+
+Con git --stat nos indica mas detalladamente los cambios hechos en los ficheros modificados, y en si hemos
+añadido o quitado una linea.
+
+---------------------------------
+Trabajando con ramas:
+---------------------------------
+
+Pregunta 16: ¿En que rama nos encontramos actualmente?
+En la rama master.
+
+Pregunta 17: ¿Cómo sabes que te encuentras en la rama experimento y no en master?
+Porque antes de cambiarme master me aparecía en verde con un asterisco y ahora, al haberme cambiado
+aparece master en blanco y experimento en verde y con un asterisco. Además, a la hora de cambiarme 
+la terminal me ha mostrado un mensaje informandome del cambio de la rama.
+
+Pregunta 20: ¿Hacia que commit apunta el HEAD actualmente?¿Cuántos commits por delante de master se encuentra la rama experimento ?
+
+El commit que está apuntando ahora el HEAD es el último que hemos realizado, el de Mejor un poco menos de
+cilandro. Se ecuentra por delante de 2 commits.
+
+
+Pregunta 23: ¿Hacia que commit se encuentra apunrando el HEAD ahora?
+Se encuentra ahora al hecho bajo la rama bajo-sal.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
